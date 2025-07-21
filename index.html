@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Premium AI Text Summarizer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div class="container" data-aos="fade-up">
+        <h1 class="title">✨ AI Text Summarizer ✨</h1>
+
+        <textarea id="inputText" placeholder="Paste your long text here..."></textarea>
+
+        <button onclick="summarizeText()">Summarize</button>
+
+        <div class="output" id="outputBox">
+            <div id="output"></div>
+            <button id="copyBtn" onclick="copySummary()">📋</button>
+        </div>
+    </div>
+
+    <script src="css/js/animation.js"></script>
+</body>
+</html>
