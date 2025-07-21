@@ -6,7 +6,7 @@ function summarizeText() {
     output.innerHTML = "⏳ Summarizing...";
     copyBtn.style.display = "none";
 
-    axios.post('https://text-summarizer-backend-8h7i.onrender.com', { text })
+    axios.post('https://text-summarizer-backend-8h7i.onrender.com/api/summarize', { text })
         .then(res => {
             output.innerHTML = res.data.summary;
             copyBtn.style.display = "block";
